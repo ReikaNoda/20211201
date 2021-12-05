@@ -28,7 +28,13 @@ a {
 
 .header__list-nav {
   display: flex;
+  margin-right: 30px;
 }
+
+.menu{
+  display: none;
+}
+
 
 .list_nav_item {
   padding: 15px;
