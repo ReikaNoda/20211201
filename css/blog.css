@@ -30,7 +30,7 @@ a {
   display: flex;
   margin-right: 30px;
 }
-.menu{
+.menu {
   display: none;
 }
 
@@ -162,7 +162,6 @@ small {
   border-right: none;
 }
 
-
 @media screen and (max-width: 768px) {
   .header {
     height: 50px;
@@ -173,8 +172,6 @@ small {
     height: 20px;
     margin: 15px 10px;
   }
-
-
 
   a {
     text-decoration: none;
@@ -245,9 +242,6 @@ small {
     transform: translateX(100%);
   }
 
-
-
-
   .footer__ber {
     height: 250px;
   }
@@ -279,19 +273,18 @@ small {
     border-right: none;
   }
 
-.main{
-  height: 2800px;
-}
-.wrap{
-  display: flex;
-  flex-direction: column;
-}
+  .main {
+    height: 2800px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
 
-p,
-h2 {
-  text-align: left;
-  padding-top: 10px;
-  margin-left: 35px;
-}
-
+  p,
+  h2 {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 35px;
+  }
 }
