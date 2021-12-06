@@ -85,13 +85,11 @@ h1 {
   width: 100%;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 40px;
   margin-bottom: 10px;
 }
 
 .form-item-input {
   border: 1px solid #dadad8;
-  margin-left: 40px;
   padding: 0 10px;
   height: 30px;
   width: 100%;
@@ -99,7 +97,6 @@ h1 {
 }
 .form-item-textarea {
   border: 1px solid #dadad8;
-  margin-left: 40px;
   padding: 0 10px;
   height: 150px;
   width: 100%;
@@ -279,5 +276,16 @@ small {
 
 .form-btn {
   margin-left: 35%;
+}
+
+
+.form {
+    width: 80%;
+    margin: 80px auto;
+    /* margin-right: 120px; */
+}
+
+.form-btn {
+    margin-left: auto;
 }
 }

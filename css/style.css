@@ -31,10 +31,9 @@ a {
   margin-right: 30px;
 }
 
-.menu{
+.menu {
   display: none;
 }
-
 
 .list_nav_item {
   padding: 15px;
@@ -44,7 +43,8 @@ a {
   width: 100%;
   height: 800px;
   background-color: thistle;
-  background: url("../img/mv.png") no-repeat center / 100%;
+  background: url("../img/mv.png") no-repeat center / 100% 100%;
+  position: relative;
 }
 
 .main1__title,
@@ -92,49 +92,60 @@ a {
 
 .main3 {
   width: 100%;
-  height: 1100px;
+  height: auto;
 }
 
-.main3__txt {
-  margin: 100px auto 20px;
+.main3__title {
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
+  margin-top: 7%;
+  margin-bottom: 30px;
 }
 
-.main3__box {
-  width: 85%;
-  height: 80%;
-  background-color: ;
-  margin: 0 auto;
+.main3__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.main3__box__content {
-  width: 600px;
-  height: 350px;
-  margin-top: 0px;
+.wrap {
+  column-count: 2;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.main3__txt-item {
-  font-size: 18px;
-  padding: 5px;
+.main3__list-item-img,
+.main3__list-item-ttl,
+.main3__list-item-ttl-dt {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
-.main3__txt-item2 {
-  line-height: 24px;
+.main3__list-item-ttl {
+  padding-top: 10px;
+}
+
+.main3__list-item-ttl,
+.main3__list-item-ttl-dt {
+  line-height: 20px;
+}
+
+.main3__list-item {
+  height: 50%;
+}
+.main3__list-item-ttl-dt {
+  margin-bottom: 20px;
 }
 
 .main3__button {
   width: 200px;
-  padding: 12px 40px;
+  padding: 12px 50px;
   background-color: #dd0e28;
   display: block;
-  margin: 40px auto 0;
+  margin: 10px auto 0;
   text-align: center;
   color: white;
   font-size: 18px;
+  margin-bottom: 70px;
 }
 
 .main3__button:hover {
@@ -169,7 +180,7 @@ a {
   color: white;
   font-weight: bold;
   position: absolute;
-  right: -40px;
+  right: 0px;
 }
 
 .main4__tag:hover {
@@ -181,11 +192,14 @@ a {
   background-color: white;
   margin-top: 10px;
   display: block;
-  padding: 25px;
+  padding: 25px 0;
   display: flex;
 }
 .main4__content:hover {
   opacity: 0.8;
+}
+.main4__content-day {
+  padding-left: 20px;
 }
 
 .main4__content-txt {
@@ -231,7 +245,7 @@ a {
 .main5__button {
   background-color: #dd0e28;
   width: 200px;
-  padding: 12px 40px;
+  padding: 12px 50px;
   font-size: 18px;
   display: block;
   margin: 0px auto 100px;
@@ -244,7 +258,7 @@ a {
 }
 
 .main5__img {
-  width: 100%;
+  width: 95%;
   height: 60%;
 }
 
@@ -313,8 +327,8 @@ a {
 .main7__button {
   display: block;
   background-color: #dd0e28;
-  width: 120px;
-  padding: 12px 80px;
+  width: 200px;
+  padding: 12px 50px;
   text-align: center;
   margin: 40px auto 0;
   font-size: 18px;
@@ -399,7 +413,16 @@ small {
 
   .main3 {
     width: 100%;
-    height: 2000px;
+    height: 2150px;
+  }
+
+  .main3__button {
+    margin: 20px auto 0;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
   }
 
   .main3__box__content {
@@ -410,14 +433,15 @@ small {
     margin-top: -50px;
   }
 
-  .main3__button {
-    margin: 260px auto 0;
-  }
-
   .main4__content {
     width: 100%;
     background-color: white;
     margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  .main4__tag {
+    margin-right: -25px;
   }
 
   .main4__box {
@@ -425,22 +449,24 @@ small {
   }
 
   .main5 {
-    height: 1700px;
+    height: 2300px;
   }
 
   .main5__box {
     display: flex;
     flex-direction: column;
-    margin: 300px auto 0;
+    margin: 400px auto 0;
   }
   .main5__img {
+    width: 100%;
+    height: 100%;
   }
 
   .main5__box-box {
-    margin: -60px 0;
+    margin: 50px 0;
   }
   .main5__button {
-    margin: 150px auto 100px;
+    margin: 450px auto 0px;
   }
 
   .main6 {
@@ -458,6 +484,7 @@ small {
     background-color: #dd0e28;
     height: 100%;
     width: 50%;
+    margin-top: 50px;
   }
 
   .main6__left-h3-txt {
@@ -475,6 +502,7 @@ small {
     height: 100%;
     width: 50%;
     display: block;
+    margin-top: 50px;
   }
 
   .main6__rihgt-h3-txt2 {
@@ -542,7 +570,7 @@ small {
     margin-top: 50px;
   }
 
-.menu {
+  .menu {
     display: inline-block;
     width: 36px;
     height: 32px;
@@ -564,7 +592,6 @@ small {
 
   .menu__line--top {
     top: 0;
-    left: 14px;
   }
   .menu__line--middle {
     top: 14px;
@@ -597,5 +624,17 @@ small {
   .main1__txt {
     width: 100%;
     text-align: center;
+  }
+
+  .main7__button {
+    font-weight: bold;
+  }
+
+  .main5__button {
+    font-weight: bold;
+  }
+
+  .main3__button {
+    font-weight: bold;
   }
 }
